@@ -1,0 +1,9 @@
+A workaround if you hate those printouts in console for RubyMotion. Sorry can't be more specific.
+
+Add it as a submodule:
+
+$ git submodule add https://github.com/hboon/WorkaroundAssertMacrosFutureOS.git vendor/WorkaroundAssertMacrosFutureOS
+
+Update rakefile:
+
+app.vendor_project('vendor/WorkaroundAssertMacrosFutureOS', :static)
